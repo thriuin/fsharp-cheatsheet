@@ -41,12 +41,14 @@ Basic Types and Literals
 ------------------------
 Most numeric types have associated suffixes, e.g., `uy` for unsigned 8-bit integers and `L` for signed 64-bit integer.
 
-    let b, i, l = 86uy, 86, 86L
+    let b, i, l, ul = 86uy, 86, 86L, 86UL
 
     // [fsi:val b : byte = 86uy]
     // [fsi:val i : int = 86]
     // [fsi:val l : int64 = 86L]
-
+	// val bigint : uint64 = 86UL
+    
+	
 Other common examples are `F` or `f` for 32-bit floating-point numbers, `M` or `m` for decimals, and `I` for big integers.
 
     let s, f, d, bi = 4.14F, 4.14, 0.7833M, 9999I
